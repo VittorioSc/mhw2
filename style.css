@@ -1,0 +1,80 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+/* codice per la visualizzazione e le varie proprietà del test */
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.choice-grid div{
+    box-sizing: border-box;
+    width: 32.5%; 
+    border: 1px solid #dcdcdc;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.choice-grid div:hover{
+    background-color: #cfe3ff;
+}
+.choice-grid img{
+    width: 100%;
+}
+.choice-grid div.selected{
+    background-color:#cfe3ff;
+}
+.opacity{
+    opacity:0.6;
+}
+.hidden{
+    display: none;
+}
+/* Regole di definizione per la parte del risultato che appare dopo aver finito il test */
+
+#result{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#result h1{
+    margin: 0;
+}
+#result p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+#button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#cecece;
+    height:50px;
+}
+#button:hover{
+    background-color:#e0e0e0;
+}
+/*-------------------------------------------------------------------------*/
+
+/*regole per la visualizzazione su dispositivi mobili secondo le specifiche assegnate*/
+
+@media (max-width: 700px) {
+    header div span{
+        display: none;
+    }
+
+    article{
+        width: 95%;
+    }
+    .question-name h1{
+        font-size: 2em;
+    }
+    
+}
+@media (max-width: 500px) {
+    .choice-grid div{
+        width: 49%;
+    }
+    .question-name h1{
+        font-size: 2em;
+    }
+}
